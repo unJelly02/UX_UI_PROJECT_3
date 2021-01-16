@@ -1,19 +1,19 @@
 # UX_UI_PROJECT_3
-# [Project-Name] : [Project-Type] App
+# [Project-Name] : [GiftGiving] App
 > Status: [Live Project](https://username.github.io/UX_UI_PROJECT_3/)
 ## Overview
-A quick description about your project
-(1-2 sentences)
+  Gifting thoughtfully rather than the sake of gifting. Curating gifts based on website searches and personal interests. 
 ### Contributors
-* list
-* your
-* group
-* (full name)
+* Damir Oleros 
+* Justin Wong
+* Amisha Patel 
+* Anjali Anusuri 
+* Ariana Horn
 ### Tools Used
 * list
 * all
 * tools
 ### Project Links
 - [Google Slides](url-link-here)
-- [Figma Prototypes](url-link-here)
+- [Figma Prototypes](https://www.figma.com/file/QNVWtGytN3sFkhQDEKOh11/Group-Project-3?node-id=0%3A1)
 - [Live Web Page](https://username.github.io/UX_UI_PROJECT_3/)
