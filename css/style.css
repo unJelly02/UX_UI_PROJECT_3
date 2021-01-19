@@ -1,0 +1,9 @@
+*{
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+.mainPage{
+padding:4% 6%;
+}
