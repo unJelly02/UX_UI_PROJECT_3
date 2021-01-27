@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url(https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;400;500;700&display=swap);
 
 * {
 	box-sizing: border-box;
 }
 
-body {
-	background: #f6f5f7;
+#container {
+    /* margin-top: 390px;
+    padding: 50px;
+    position: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: -20px 0 50px;
+	align-items: center; */
+	flex-direction: row;
+	font-family: 'prompt';
+	height: 90vh;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 250px;
 }
 
 h1 {
@@ -44,10 +49,10 @@ a {
 }
 
 button {
-	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
+	border-radius: 10px;
+	border: 2px solid #28324B;
+	background-color: #ffffff;
+	color: #28324B;
 	font-size: 12px;
 	font-weight: bold;
 	padding: 12px 45px;
@@ -65,12 +70,17 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+	background-color: #ffffff;
+	border-color: #28314B;
+}
+
+button:hover {
+    background-color: #28324B;
+    color: #ffffff;
 }
 
 form {
-	background-color: #FFFFFF;
+	background-color: #c4c4c4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -81,7 +91,7 @@ form {
 }
 
 input {
-	background-color: #eee;
+	background-color: #ffffff;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
@@ -159,9 +169,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #28324b;
+	background: -webkit-linear-gradient(to right, #28324bcc, #28324bcc);
+	background: linear-gradient(to right, #28324bcc, #28324bcc);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -222,30 +232,127 @@ input {
 	align-items: center;
 	margin: 0 5px;
 	height: 40px;
-	width: 40px;
+    width: 40px;
+    background-color: white;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
+
+/* remember me */
+
+.form-remember {
+    font-size: 10px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-left: -190px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.email1 {
+    border-radius: 4px;
+}
+
+/* wrong email hide password */
+.form input[type=password] {
+    padding-right: 65px;
+}
+
+.form .hide-password {
+    display: inline-block;
+    position: absolute;
+      text-decoration: none;
     right: 0;
-    text-align: center;
-    z-index: 999;
+    top: 0;
+    padding: 6px 15px;
+    border-left: 1px solid #d2d8d8;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #343642;
+  }
+  .form .error-message {
+    display: inline-block;
+    position: absolute;
+    left: -5px;
+    bottom: -35px;
+    background: rgba(215, 102, 102, 0.9);
+    padding: .8em;
+    z-index: 2;
+    color: #FFF;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    border-radius: 0.25em;
+    /* prevent click and touch events */
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s 0, visibility 0 0.2s;
+    -moz-transition: opacity 0.2s 0, visibility 0 0.2s;
+    transition: opacity 0.2s 0, visibility 0 0.2s;
+  }
+  .form .error-message::after {
+    /* triangle */
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: 100%;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(215, 102, 102, 0.9);
+  }
+  .form .error-message.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.2s 0, visibility 0 0;
+    -moz-transition: opacity 0.2s 0, visibility 0 0;
+    transition: opacity 0.2s 0, visibility 0 0;
+  }
+
+/* shape background */
+
+.shape1 {
+    background: #FEDB35;
+    color: #FFF;
+    padding: 2em;
+    position: relative;
+    min-height:300px;
+    overflow:hidden;
+}
+.shape1::after {
+  content: '';
+  position: absolute;
+  bottom: -75%; left: 0; right: 0;
+  height:100%;
+  background:#FFF;
+  transform: skew(0deg, -5deg);
 }
 
-footer p {
-    margin: 10px 0;
+.shape2 {
+    background: #FEDB35;
+    color: #FFF;
+    padding: 2em;
+    position: relative;
+    min-height:300px;
+    overflow:hidden;
 }
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
+.shape2::after {
+  content: '';
+  position: absolute;
+  top: -75%; left: 0; right: 0;
+  height:100%;
+  background:#FFF;
+  transform: skew(0deg, -5deg);
 }

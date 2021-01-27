@@ -6,9 +6,62 @@
     <title>signin and register </title>
     <link rel="stylesheet" href="signin.css">
     <link rel="stylesheet" href="signin.js">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Google Font Prompt-->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;400;500;700&display=swap" rel="stylesheet">
     <!-- signin register switch -->
+</head>
 
+<body>
+<!-- nav -->
+<div class="header" style= "font-size: 1em;">
+    <div class="ad">We value you. May encounter minor delays due to Covid. -  <a href="shipping">FAQs</a></div>
+    <div class="mainHeader"> 
+        <div class="logo"> Guzi</div>
+        <div class="searchBar"><div class="text">Search</div>
+
+            <span class="iconify" data-icon="bi:search" data-inline="false"></span>
+        </div>
+        <div class="newNav">
+            <div class="navItem">Account
+                <span class="iconify" data-icon="bx:bxs-user-account" data-inline="false"></span>
+            </div>
+            <div class="navItem">Wishlist
+                <span class="iconify" data-icon="maki:gift-15" data-inline="false"></span>
+            </div>
+            <div class="navItem">Cart
+                <span class="iconify" data-icon="clarity:shopping-cart-solid-badged" data-inline="false"></span>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="categoryItems">Category#1</div>
+        <div class="categoryItems">Category#2</div>
+        <div class="categoryItems">Category#3</div>
+        <div class="categoryItems">Category#4</div>
+        <div class="categoryItems">Category#5</div>
+    </div>
+</div>
+        <!-- Iconify -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!--Main JS-->
+    <script src="header.js" async defer></script>
+    <script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous">
+</script> 
+
+<!-- shape1 background -->
+<div class="shape1">
+</div>
+
+    <!-- form -->
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
@@ -20,45 +73,141 @@
                 </div>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
+                <input type="email1" placeholder="Email1" />
                 <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Confirm Password" />
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
-                <h1>Sign in</h1>
+                <h1>Sign in to Guzi</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-apple"></i></a>
                 </div>
-                <span>or use your account</span>
-                <input type="email" placeholder="Email" />
+                <span>or use your email for registration</span>
+                <input type="email1" placeholder="Email" />
+                <!-- <span class="error-message">An account with this email address does not exist!</span> -->
                 <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
+                <!-- <a href="#0" class="hide-password">Show</a><span class="error-message">Wrong password! Try again.</span> -->
+                <a href="#" style="text-decoration: underline;">Forgot your password?</a>
+                <label class="form-remember">
+                    <input type="checkbox" />Remember Me
+                </label>
                 <button>Sign In</button>
+
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
+                    <p>To stay updated with your friends and other things please log in with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
+                    <h1>Hello!</h1>
+                    <p>Get started to become a better gift giver, or reciver and start with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-</head>
-<body>
-    
+<script id="rendered-js">
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+<!-- shape 2 -->
+<div class="shape2">
+</div>
+<!-- footer start -->
+
+<div class="footer">
+    <div class="productSection">
+        <div class="linkSection">
+            <div class="firstCatergory">
+                <div class="footerHeading">First Category</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+            </div>
+            <div class="secondCategory">
+                <div class="footerHeading">Second Category</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+            </div>
+            <div class="thirdCategory">
+                <div class="footerHeading">Third Category</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+                <div class="footerText">Text Item</div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="connectSection">
+            <div class="footerHeading">
+                Mailing List
+            </div>
+            <div class="footerText">
+                Sign up to our daily news letter
+            </div>
+            <form class = "subscribeEmail">
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <button class = "filledButton" type="submit" >Submit</button>
+            </form>
+            <div class="connectLinks">
+                <div class="socialMedia">
+                    <div class="footerHeading">
+                        Follow us:
+                    </div>
+                    <div class="mediaIcons">
+                        <span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span>
+                        <span class="iconify" data-icon="bx:bxl-instagram" data-inline="false"></span>
+                        <span class="iconify" data-icon="bx:bxl-twitter" data-inline="false"></span>
+                        <span class="iconify" data-icon="bx:bxl-pinterest" data-inline="false"></span>
+                    </div>
+                    
+                </div>
+                <div class="line"></div>
+                <div class="appDownload">
+                    <span class="iconify" data-icon="raphael:iphone" data-inline="false"></span>
+                    <div class="footerText">Download the app</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="policySection">
+        <div class="policies">
+            <div class="text"> &#169; 2021 Guzi</div>
+            <div class="line"></div>
+            <div class="text"> Privacy Policy</div>
+            <div class="line"></div>
+            <div class="text"> Terms of Use</div>
+            <div class="line"></div>
+            <div class="text"> CA Privacy</div>
+            <div class="line"></div>
+            <div class="text"> Customer Service</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
