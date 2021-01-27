@@ -17,7 +17,7 @@
     justify-content: center;
     height:4vh;
     align-items: center;
-    background-color:#646464;
+    background-color:#28324B;
     color:#ffffff;
 }
 .ad a{
@@ -28,7 +28,7 @@
     justify-content: space-around;
     height:7vh;
     align-items: center;
-    background-color:#EBEBEB; 
+    /* background-color:#EBEBEB;  */
 }
 .newNav, .categories{
     display:flex;
@@ -57,4 +57,8 @@
 .navItem svg.iconify{
 margin-top:4px;
 margin-left:6px;
+}
+a.nav-link{
+    color: #212529;
+    font-weight:400;
 }
