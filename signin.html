@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="signin.js">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="js/app.js">
+<!-- bootstrap -->
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -19,44 +21,7 @@
 
 <body>
 <!-- nav -->
-<div class="header" style= "font-size: 1em;">
-    <div class="ad">We value you. May encounter minor delays due to Covid. -  <a href="shipping">FAQs</a></div>
-    <div class="mainHeader"> 
-        <div class="logo"> Guzi</div>
-        <div class="searchBar"><div class="text">Search</div>
-
-            <span class="iconify" data-icon="bi:search" data-inline="false"></span>
-        </div>
-        <div class="newNav">
-            <div class="navItem">Account
-                <span class="iconify" data-icon="bx:bxs-user-account" data-inline="false"></span>
-            </div>
-            <div class="navItem">Wishlist
-                <span class="iconify" data-icon="maki:gift-15" data-inline="false"></span>
-            </div>
-            <div class="navItem">Cart
-                <span class="iconify" data-icon="clarity:shopping-cart-solid-badged" data-inline="false"></span>
-            </div>
-        </div>
-    </div>
-    <div class="categories">
-        <div class="categoryItems">Category#1</div>
-        <div class="categoryItems">Category#2</div>
-        <div class="categoryItems">Category#3</div>
-        <div class="categoryItems">Category#4</div>
-        <div class="categoryItems">Category#5</div>
-    </div>
-</div>
-        <!-- Iconify -->
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <!--Main JS-->
-    <script src="header.js" async defer></script>
-    <script
-src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous">
-</script> 
-
+<div id="header.js"></div>
 <!-- shape1 background -->
 <div class="shape1">
 </div>
@@ -72,19 +37,10 @@ crossorigin="anonymous">
                     <a href="#" class="social"><i class="fab fa-apple"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <!-- <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Name" />
                 <input type="email1" placeholder="Email1" />
                 <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirm Password" /> -->
-                <div class="input-group">
-                    <label for="txtUserName">User Name</label>
-                    <input type="text" class="form-control" name="txtUserName" />
-                  </div>
-                  <div class="input-group">
-                    <label for="txtPassword">Password</label>
-                    <input type="password" id="txtPassword" class="form-control" name="txtPassword" />
-                    <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon" class="fa fa-eye"></i></button>
-                  </div>
+                <input type="password" placeholder="Confirm Password" />
                 <button>Sign Up</button>
             </form>
         </div>
@@ -98,12 +54,23 @@ crossorigin="anonymous">
                 </div>
                 <span>or use your email for registration</span>
                 <input type="email1" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="password" name="password" id="password" placeholder="Password">
+                 <i class="fa fa-eye" id="togglePassword"></i>
                 <a href="#" style="text-decoration: underline;">Forgot your password?</a>
                 <label class="form-remember">
                     <input type="checkbox" />Remember Me
                 </label>
                 <button>Sign In</button>
+                <script>
+                    const togglePassword = document.querySelector('#togglePassword');
+                    const password = document.querySelector('#password');
+
+                   togglePassword.addEventListener('click', function(e) {
+                   const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                   password.setAttribute('type', type);
+                   this.classList.toggle('fa-eye-slash');
+                   });
+                </script>
             </form>
         </div>
         <div class="overlay-container">
@@ -139,82 +106,14 @@ signInButton.addEventListener('click', () => {
 <div class="shape2">
 </div>
 <!-- footer start -->
+<div id="header.js"></div>
 
-<div class="footer">
-    <div class="productSection">
-        <div class="linkSection">
-            <div class="firstCatergory">
-                <div class="footerHeading">First Category</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-            </div>
-            <div class="secondCategory">
-                <div class="footerHeading">Second Category</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-            </div>
-            <div class="thirdCategory">
-                <div class="footerHeading">Third Category</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-                <div class="footerText">Text Item</div>
-            </div>
-        </div>
-        <div class="line"></div>
-        <div class="connectSection">
-            <div class="footerHeading">
-                Mailing List
-            </div>
-            <div class="footerText">
-                Sign up to our daily news letter
-            </div>
-            <form class = "subscribeEmail">
-                <input type="email" id="email" name="email" placeholder="Your email" required>
-                <button class = "filledButton" type="submit" >Submit</button>
-            </form>
-            <div class="connectLinks">
-                <div class="socialMedia">
-                    <div class="footerHeading">
-                        Follow us:
-                    </div>
-                    <div class="mediaIcons">
-                        <span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span>
-                        <span class="iconify" data-icon="bx:bxl-instagram" data-inline="false"></span>
-                        <span class="iconify" data-icon="bx:bxl-twitter" data-inline="false"></span>
-                        <span class="iconify" data-icon="bx:bxl-pinterest" data-inline="false"></span>
-                    </div>
-                    
-                </div>
-                <div class="line"></div>
-                <div class="appDownload">
-                    <span class="iconify" data-icon="raphael:iphone" data-inline="false"></span>
-                    <div class="footerText">Download the app</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="policySection">
-        <div class="policies">
-            <div class="text"> &#169; 2021 Guzi</div>
-            <div class="line"></div>
-            <div class="text"> Privacy Policy</div>
-            <div class="line"></div>
-            <div class="text"> Terms of Use</div>
-            <div class="line"></div>
-            <div class="text"> CA Privacy</div>
-            <div class="line"></div>
-            <div class="text"> Customer Service</div>
-        </div>
-    </div>
-</div>
+<script>
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    $("#mainPage").load("mainPage.html"); 
+});
+</script>
 </body>
 </html>
