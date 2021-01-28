@@ -16,6 +16,8 @@ img {
 	padding: 10px;
 	text-align: center;
 	margin-left: 43%;
+	width: 15%;
+	position: space-around;
 }
 
 #container {
