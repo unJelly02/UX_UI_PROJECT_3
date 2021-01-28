@@ -73,7 +73,11 @@ a.nav-link{
 }
 .iconify{
     margin-right:4px;
-    font-size:20px;
+
+}
+.navItem .iconify{
+    padding-top:6px;
+    font-size:22px;
 }
 .yellowLine{
     margin-left: 15%;
@@ -84,5 +88,11 @@ a.nav-link{
 }
 .navItem a{
     color:inherit;
-    text-decoration: none;;
+    text-decoration: none;
+}
+a:hover {
+    color: #0a58ca;
+}
+.categoryItems a{
+    text-decoration: none;
 }
