@@ -8,6 +8,7 @@
     gap:14vw;
     border:1px solid #9E9E9E;
     /* padding:3px 8px; */
+    height:4.5vh;
     margin:4px;
     border-radius:4px;
     color:#9E9E9E;
@@ -76,7 +77,6 @@ a.nav-link{
 
 }
 .navItem .iconify{
-    padding-top:6px;
     font-size:22px;
 }
 .yellowLine{
