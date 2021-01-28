@@ -1,0 +1,46 @@
+.profileInfo{
+    color:#28324B;
+}
+.trendingQuizzes{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.trendingQuizHeading{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.trendingQuizHeading a{
+    color:#424242;
+}
+.trendingQuizzes{
+    display:flex;
+    justify-content: space-evenly;
+}
+.grayLine{
+    margin: 10%;
+    border:3px solid #000000;
+}
+.giftCultureProbs .text{
+    display:flex;
+    justify-content: center;
+}
+.beyondGifting{
+    background-color: #FEDB35;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:5%;
+}
+.githAndFlowersImg{
+    right:2%;
+    position: absolute;
+    width:18%;
+}
+.checked {
+    color: orange;
+  }

@@ -1,6 +1,10 @@
 *{
     font-weight: 300;
 }
+.footer{
+    color:#ffffff;
+    background-color:#28324B;
+}
 .policySection{
     display:flex;
     justify-content: center;
@@ -8,8 +12,8 @@
     flex-wrap: wrap;
     height:7vh;
     align-items: center;
-    color:#646464;
-    background-color:#ffffff;
+    color:#ffffff;
+    background-color:#28324B;
 }
 .policies{
     display:flex;
@@ -27,7 +31,7 @@
     flex-direction:row;
     flex-wrap: wrap;
     padding:12px 15px;
-    background-color: #EAEAEA;
+    /* background-color: #EAEAEA; */
 }
 
 input[type=email], select, textarea {
@@ -59,7 +63,7 @@ input[type=submit] , .filledButton{
     flex-wrap: wrap;
 }
 .footerHeading{
-    font-weight: 400;;
+    font-weight: 400;
 }
 .connectLinks{
     display:flex;
@@ -87,4 +91,20 @@ input[type=submit] , .filledButton{
     justify-content: space-between;
     flex-direction:row;
     flex-wrap: wrap;
+}
+.searchBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap:14vw;
+    border:1px solid #9E9E9E;
+    /* padding:3px 8px; */
+    border-radius:4px;
+    color:#9E9E9E;
+    background-color:inherit;
+
+}
+.orangeBg{
+    padding:3px 20px;
+    background-color: #FF7A56;
 }
