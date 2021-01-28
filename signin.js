@@ -1,3 +1,12 @@
+// app
+
+$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    $("#mainPage").load("mainPage.html"); 
+});
+
+// form
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
@@ -23,3 +32,4 @@ togglePassword.addEventListener('click', function(e) {
 password.setAttribute('type', type);
 this.classList.toggle('fa-eye-slash');
 });
+
