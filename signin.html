@@ -72,10 +72,19 @@ crossorigin="anonymous">
                     <a href="#" class="social"><i class="fab fa-apple"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
+                <!-- <input type="text" placeholder="Name" />
                 <input type="email1" placeholder="Email1" />
                 <input type="password" placeholder="Password" />
-                <input type="password" placeholder="Confirm Password" />
+                <input type="password" placeholder="Confirm Password" /> -->
+                <div class="input-group">
+                    <label for="txtUserName">User Name</label>
+                    <input type="text" class="form-control" name="txtUserName" />
+                  </div>
+                  <div class="input-group">
+                    <label for="txtPassword">Password</label>
+                    <input type="password" id="txtPassword" class="form-control" name="txtPassword" />
+                    <button type="button" id="btnToggle" class="toggle"><i id="eyeIcon" class="fa fa-eye"></i></button>
+                  </div>
                 <button>Sign Up</button>
             </form>
         </div>
@@ -89,9 +98,7 @@ crossorigin="anonymous">
                 </div>
                 <span>or use your email for registration</span>
                 <input type="email1" placeholder="Email" />
-                <!-- <span class="error-message">An account with this email address does not exist!</span> -->
                 <input type="password" placeholder="Password" />
-                <!-- <a href="#0" class="hide-password">Show</a><span class="error-message">Wrong password! Try again.</span> -->
                 <a href="#" style="text-decoration: underline;">Forgot your password?</a>
                 <label class="form-remember">
                     <input type="checkbox" />Remember Me
