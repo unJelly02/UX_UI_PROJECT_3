@@ -19,10 +19,11 @@
     <!--Header-->
     <div id="header"></div>
     <!-- Main Page -->
+
     <div id="wishlist">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">My Lists</a>
+            <a class="nav-link active" aria-current="page" href="gradlist.html">My Lists</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Friend's List</a>
@@ -32,60 +33,94 @@
             </li>
         </ul>
     </div>
-    <div class="addButtonSection">
+    <div class="wishlist">
+        <div class="addButtonSection">
 
-    <button type="button" class="btn btn-dark">New Wishlist</button>
-    <button type="button" class="btn btn-outline-dark">Sort By</button>
-    </div>
-    <div class="imageSection">
-        <div class="imgCol">
-            <div class="imgBg">
-                <div class="wishListImg">
-                    <img style= "width:100%;"src= "images/wishlist/home/grad.jpg"/>
-                    <div class="text"> Graduation Wish List</div>
-                    <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
-                </div>
+            <button type="button" class="btn btn-dark">New Wishlist</button>
+            <div class="sortIcons">
+                <span class="iconify" data-icon="bi:grid-3x3-gap-fill" data-inline="false"></span>
+                <span class="iconify" data-icon="fa-solid:th-list" data-inline="false"></span>
+                <button type="button" class="btn btn-outline-dark">Sort By</button>
             </div>
-            <div class="imgBg">
-                <div class="wishListImg">
-                    <img style= "width:100%;"src= "images/wishlist/home/mandmCake.jpg"/>
-                    <div class="text"> Birthday Wish List</div>
+    
+        </div>
+        <div class="imageSection">
+            <div class="imgCol">
 
-                    <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
+                    <div class="imgBg">
+                        <a href="gradlist.html">
+                        <div class="wishListImg">
+                            <img style= "width:100%;height:150px;width:250px;"src= "images/wishlist/home/grad.jpg"/>
+                            <div class="title">
+                                <div class="text"> Graduation Wish List</div>
+                                <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
+                            </div>
+                            <div class="itemList">9 items</div>
+                        </div>
+                    </a>
+                    
+                    </div>
+
+
+                <div class="imgBg">
+                    <div class="wishListImg">
+                        <img style= "width:100%;height:150px;width:250px;"src= "images/wishlist/home/mandmCake.jpg"/>
+                        <div class="title">
+                            <div class="text"> Birthday Wish List</div>
+                            <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
+                        </div>
+                        <div class="itemList">12 items</div>
+                    </div>
                 </div>
-            </div>
-            <div class="imgBg">
-                <div class="wishListImg">
-                    <img style= "width:100%;"src= "images/wishlist/home/valentines.jpg"/>
-                    <div class="text"> Valentines Wish List</div>
-                    <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
+                <div class="imgBg">
+                    <div class="wishListImg">
+                        <img style= "width:100%;height:150px;width:250px;"src= "images/wishlist/home/valentines.jpg"/>
+                        <div class="title">
+                            <div class="text"> Valentines Wish List</div>
+                            <span class="iconify" data-icon="mdi:lock-outline" data-inline="false"></span>
+                        </div>
+                        <div class="itemList">6 items</div>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- <div style = "margin-top:5%;"class="imgCol"> -->
+                <div class="imgBg">
+                    <div class="wishListImg">
+                        <img style= "width:100%;height:150px;width:250px;"src= "images/wishlist/home/wedding.jpg"/>
+                        <div class="title">
+                            <div class="text"> Wedding Wish List</div>
+                            <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
+                        </div>
+                        <div class="itemList">42 items</div>
+                    </div>
+                </div>
+                <div class="imgBg">
+                    <div class="wishListImg">
+                        <img style= "width:100%;height:150px;width:250px;"src= "images/wishlist/home/misc.jpg"/>
+                        <div class="title">
+                        <div class="text"> Misc Wish List</div>
+                        <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
+                        </div>
+                        <div class="itemList">55 items</div>
+                    </div>
+                </div>
+                <div class="imgBg">
+                    <div class="wishListImg">
+                        <div class="imgStyle">
+                            <span style= "font-size:150px" class="iconify" data-icon="mdi:plus" data-inline="false"></span>
+                        
+                        </div>
+                        <!-- <img style= "width:100%;height:150px;width:250px;"src= "images/wishlist/home/grad.jpg"/> -->
+                        <div class="title">
+                        <div class="text"> ADD A NEW WISH LIST</div>
+                        </div>
+                        <div class="itemList"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style = "margin-top:5%;"class="imgCol">
-            <div class="imgBg">
-                <div class="wishListImg">
-                    <img style= "width:100%;"src= "images/wishlist/home/wedding.jpg"/>
-                    <div class="text"> Wedding Wish List</div>
-                    <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
-                </div>
-            </div>
-            <div class="imgBg">
-                <div class="wishListImg">
-                    <img style= "width:100%;"src= "images/wishlist/home/misc.jpg"/>
-                    <div class="text"> Graduation Wish List</div>
-                    <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
-                </div>
-            </div>
-            <div class="imgBg">
-                <div class="wishListImg">
-                    <img style= "width:100%;"src= "images/wishlist/home/grad.jpg"/>
-                    <div class="text"> Graduation Wish List</div>
-                    <span class="iconify" data-icon="mdi:lock-open-outline" data-inline="false"></span>
-                </div>
-            </div>
-        </div>
     </div>
+
     <!--Footer-->
     <div id="footer"></div>
     <!--Main JS-->

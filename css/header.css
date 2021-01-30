@@ -8,10 +8,11 @@
     gap:14vw;
     border:1px solid #9E9E9E;
     /* padding:3px 8px; */
-    height:4.5vh;
-    margin:4px;
+    height:3.5vh;
+    margin-top:15px;
     border-radius:4px;
     color:#9E9E9E;
+    font-size:14px;
     background-color:#fdfdfd;
 
 }
@@ -91,8 +92,11 @@ a.nav-link{
     text-decoration: none;
 }
 a:hover {
-    color: #0a58ca;
+    color: #F39970;
 }
 .categoryItems a{
     text-decoration: none;
+}
+.active{
+    border-bottom:2px solid #F39970;
 }
