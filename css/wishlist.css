@@ -1,6 +1,81 @@
 .addButtonSection{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding:4%;
 }
+.imageSection{
+    background-color:#FED80C;
+    padding:10%;
+}
+.imgCol{
+    display:flex;
+    flex: 33%;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:4%;
+    align-items: center;
+
+}
+.imgBg{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:6px;
+    padding:3% 3% 5% 3%;
+    /* background-color: rgba(252, 250, 250,0.8); */
+    background-color: #ffffff;
+    /* opacity:80%; */
+    border-radius:8px;
+    transition: 0.3s;
+    /* height:20vh; */
+    /* width:20%; */
+}
+.imgBg:hover{
+    cursor:pointer;
+    background-color: rgba(252, 250, 250,0.8);
+    transform: scale(1.05);
+}
+.title{
+    display:flex;
+    justify-content: space-between;
+    padding:3px;
+}
+.wishListImg .iconify{
+    font-size:25px;
+}
+.imgStyle{
+    height:150px;
+    width:250px;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:center;
+}
+.wishListImg .text,.wishListImg .iconify{
+margin-top: 5px;
+color:424242;
+font-weight:400;
+/* font-size:18px; */
+}
+.wishListImg .itemList{
+color:#939393;
+font-size:16px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .imgCol {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .imgCol {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
