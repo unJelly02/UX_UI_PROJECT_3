@@ -78,6 +78,33 @@ font-weight:400;
 color:#939393;
 font-size:16px;
 }
+.desc{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],[type=email], select, textarea {
+    width: 50%; /* Full width */
+    padding: 8px; /* Some padding */ 
+    border: 1px solid #D1D4D8; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    background-color:inherit;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  /* Style the submit button with a specific background color etc */
+input[type=submit] , .filledButton{
+    background-color: #D1D4D8;
+    color: #595959;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 rgba(224, 197, 196, 0.6);
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .imgCol {
@@ -94,4 +121,4 @@ font-size:16px;
       flex: 100%;
       max-width: 100%;
     }
-  }
+}
