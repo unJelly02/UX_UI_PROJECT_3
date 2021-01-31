@@ -81,12 +81,12 @@ font-size:16px;
 .desc{
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-between;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],[type=email], select, textarea {
     width: 50%; /* Full width */
-    padding: 8px; /* Some padding */ 
+    padding: 4px; /* Some padding */ 
     border: 1px solid #D1D4D8; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -105,20 +105,37 @@ input[type=submit] , .filledButton{
     cursor: pointer;
     box-shadow: 0 0 1rem 0 rgba(224, 197, 196, 0.6);
 }
+.container{
+    display:flex;
+    flex-direction: row;;
+    justify-content: space-between;
+
+}
+.imgBg{
+    height:80px;
+    width:144px;
+    border: 1px dashed #BCBCBC;
+}
+.imgBg .image{
+    margin:2%;
+    background-color: #DFDBDB;
+    height:94%;
+    /* width:100%; */
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .imgCol {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
     }
-  }
-  
+}
+
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .imgCol {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
     }
 }
