@@ -1,5 +1,6 @@
-body{margin-top:20px;
-    background:#eee;
+body{
+    /* margin-top:20px; */
+    /* background:#eee; */
     font-family: 'prompt';
     }
 
@@ -56,7 +57,7 @@ body{margin-top:20px;
         font-size: 1em;
     }
     #user-profile .profile-stars {
-        color: #FABA03;
+        color: #EE6F3C;
         padding: 7px 0;
         text-align: center;
     }
