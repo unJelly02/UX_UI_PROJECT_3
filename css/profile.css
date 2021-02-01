@@ -498,7 +498,10 @@ body{
             margin-bottom: 15px;
         }
     }
-    
+    .recentActivity{
+        padding: 2% 4%;
+        background-color:#F3F3F3;
+    }
     
     .tabs-wrapper {
         margin-bottom: 20px;
@@ -508,6 +511,8 @@ body{
     .tab-content {
         text-align: left;
         letter-spacing: normal;
+        display:flex;
+        justify-content:space-between;
     }
     
     /* RECENT - USERS */
@@ -647,9 +652,15 @@ body{
 
     .overview-container {
         text-align: center;
-        padding: 40px;
-    }
 
+    }
+    .overview-container  h2{
+        text-align: center;
+        /* padding: 40px; */
+        color: #7887AC;
+        font-weight:500;
+        font-size:3em;
+    }
     .fundgift {
         padding: 5px;
         border-radius: 30px;
