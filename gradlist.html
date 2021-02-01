@@ -39,9 +39,56 @@
         <div class="wishlist">
             <div class="addButtonSection">
                 <div class="sortIcons">
-                    <button type="button" class="btn btn-dark">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <span  class="iconify" data-icon="mdi:plus" data-inline="false"></span>
                         Add new Item</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Add Item to current wishlist</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <form method="POST" id= "myForm" name="google-sheet">
+                                            <div class="desc link">
+                                                <label for="name"> Link</label>
+                                                <input type="text" id="name" name="name" placeholder="https://" required>
+                                            </div>
+                                            <div class="desc giftName">
+                                                <label for="email">Gift Name</label>
+                                                <input type="text" id="email" name="email" placeholder="E.g. Chocolates" required>        
+                                            </div>
+                                            <div class="desc price">
+                                                <label for="name"> Price</label>
+                                                <input type="text" id="name" name="name" placeholder="e.g. $9.99" required>
+                                            </div>
+                                            <div class="desc retailer">
+                                                <label for="email">Retailer</label>
+                                                <input type="text" id="email" name="email" placeholder="e.g. Amazon" required>
+                                            </div>
+                                            <div class="desc details">
+                                                <label for="subject">Details</label>
+                                                <textarea id="subject" name="subject" placeholder="About the Item" style="height:100px;border: 1px solid #D1D4D8;" required></textarea>
+                                                
+                                            </div>
+                                        </form>
+                                        <div class="imageContainer">
+                                            <div class="imgBg">
+                                                <div class="image"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Add Item</button>
+                                <button type="button" class="btn btn-outline-dark">Cancel</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     <button type="button" class="btn btn-outline-dark">
                         <span  class="iconify" data-icon="mdi:gift-open-outline" data-inline="false"></span>Share this list</button>
                 </div>
@@ -168,6 +215,52 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star "></span>(1,349)
                                 <p>$189.00</p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn orangeButton" type="button">Add to wishlist</button>
+                                </div>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBg">
+                        <div class="card" style="width: 14rem;">
+                            <img style= "width:100%;height:23vh;" src ="images//gradlist/coffeMaker.png"
+                            class="card-img-top" alt="...">
+                            <div class="d-grid gap-2">
+                                <button class="btn whiteButton" type="button">
+                                    <span style= "color:#ffffff;"class="iconify" data-icon="bx:bxs-check-square" data-inline="false"></span></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Keurig Blender All-In-One</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>(1,379)
+                                <p>$18.00</p>
+                                <div class="d-grid gap-2">
+                                    <button class="btn orangeButton" type="button">Add to wishlist</button>
+                                </div>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardBg">
+                        <div class="card" style="width: 14rem;">
+                            <img style= "width:100%;height:23vh;" src ="images//gradlist/TacticalPen.jpg"
+                            class="card-img-top" alt="...">
+                            <div class="d-grid gap-2">
+                                <button class="btn whiteButton" type="button">
+                                    <span style= "color:#ffffff;"class="iconify" data-icon="bx:bxs-check-square" data-inline="false"></span></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tactical Pen and LED Flashlight</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>(1,034)
+                                <p>$24.97</p>
                                 <div class="d-grid gap-2">
                                     <button class="btn orangeButton" type="button">Add to wishlist</button>
                                 </div>
