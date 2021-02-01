@@ -33,6 +33,7 @@
 }
 .imgBg > a{ 
 text-decoration: none;
+color:inherit;
 }
 .imgBg:hover{
     cursor:pointer;

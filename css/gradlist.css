@@ -83,14 +83,21 @@ font-size:16px;
     align-items:center;
     justify-content: space-between;
 }
+.inactive {
+    display:none;
+}
+.active {
+    display:inherit;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],[type=email], select, textarea {
-    width: 50%; /* Full width */
+    width: 65%; /* Full width */
     padding: 4px; /* Some padding */ 
     border: 1px solid #D1D4D8; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
+    color: #424242;
     margin-bottom: 16px; /* Bottom margin */
     background-color:inherit;
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -107,13 +114,17 @@ input[type=submit] , .filledButton{
 }
 .container{
     display:flex;
-    flex-direction: row;;
+    flex-direction: row;
+
     justify-content: space-between;
 
 }
+.imageContainer{
+    width:20%;
+}
 .imgBg{
-    height:80px;
-    width:144px;
+    /* height:80px;
+    width:144px; */
     border: 1px dashed #BCBCBC;
 }
 .imgBg .image{
@@ -121,6 +132,10 @@ input[type=submit] , .filledButton{
     background-color: #DFDBDB;
     height:94%;
     /* width:100%; */
+}
+
+.modal-dialog{
+    max-width:600px;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
