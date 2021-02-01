@@ -842,3 +842,23 @@ body{
         font-size: 14px;
         color: #fed80c;
     }
+
+    /* Recent Quizzes */
+    .trendingQuizHeading{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .trendingQuizHeading a{
+        color:#424242;
+    }
+    .trendingQuizImg{
+        margin:2%;
+    }
+    .trendingQuizzes{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;;
+        justify-content: space-evenly;
+    }
