@@ -9,6 +9,7 @@ button{
     display:flex;
     justify-content:center;
     flex-direction:row;
+    flex-wrap: wrap;
     align-items:center;
 }
 .trendingQuizzes{
@@ -89,6 +90,10 @@ button{
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
+    flex-wrap: wrap;
+    }
+    .demandCol{
+    margin-bottom:4px;
     }
 }
 

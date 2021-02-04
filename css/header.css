@@ -100,3 +100,35 @@ a:hover {
 .active{
     border-bottom:2px solid #F39970;
 }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.ad{
+    display: none;
+}
+.mainHeader{
+    flex-direction: column;;
+    width:100%;
+    margin: 40px 0px;
+}
+    .imgCol {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    }
+    .searchBar{
+        display: none;;
+    }
+    .thirdSection, .categories,.categoryItems{
+        flex-direction: column;
+    }
+}
+
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .imgCol {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+}
