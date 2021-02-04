@@ -110,6 +110,7 @@ a:hover {
     width:100%;
     margin: 40px 0px;
 }
+
     .imgCol {
     -ms-flex: 50%;
     flex: 50%;
@@ -120,6 +121,7 @@ a:hover {
     }
     .thirdSection, .categories,.categoryItems{
         flex-direction: column;
+        gap:0;
     }
 }
 
