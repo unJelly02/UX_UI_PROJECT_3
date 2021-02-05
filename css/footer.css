@@ -109,3 +109,19 @@ input[type=submit] , .filledButton{
     padding:3px 20px;
     background-color: #FF7A56;
 }
+.trade{
+    display:flex;
+    justify-content:center;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .thirdCategory {
+        display:none;
+    }
+    .linkSection{
+        margin-bottom: 3px;;
+    }
+    .trade{
+        justify-content: flex-end;
+    }
+}

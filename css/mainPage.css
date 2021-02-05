@@ -59,7 +59,7 @@ button{
     align-items: center;
     padding:5%;
 }
-.githAndFlowersImg{
+.giftAndFlowersImg{
     right:2%;
     position: absolute;
     width:18%;
@@ -94,6 +94,9 @@ button{
     }
     .demandCol{
     margin-bottom:4px;
+    }
+    .giftAndFlowersImg{
+        display:none;
     }
 }
 
