@@ -18,5 +18,5 @@
 * Invision
 ### Project Links
 - [Google Slides](url-link-here)
-- [Figma Prototypes](https://www.figma.com/file/QNVWtGytN3sFkhQDEKOh11/Group-Project-3?node-id=0%3A1)
+- [Figma Prototypes](https://www.figma.com/proto/QNVWtGytN3sFkhQDEKOh11/Group-Project-3?node-id=985%3A66547&scaling=min-zoom)
 - [Live Web Page](https://unjelly02.github.io/UX_UI_PROJECT_3/)
